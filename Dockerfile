@@ -7,5 +7,5 @@ RUN git clone https://gitlab.gnome.org/exalm/libadwaita \
     && meson install -C build \
     && cd ..
 RUN rustup-init -y \
-    && source $HOME/.cargo/env
+    && source $HOME/.cargo/env \
     && rustup component add clippy
